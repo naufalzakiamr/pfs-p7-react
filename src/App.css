@@ -1,0 +1,31 @@
+/* Light mode */
+body.light-mode {
+  background-color: #f5f5f5;
+  color: #333;
+  background-image: url('/path/to/light-background.jpg'); /* Gambar latar belakang untuk light mode */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+  background-image: url('/path/to/dark-background.jpg'); /* Gambar latar belakang untuk dark mode */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Style untuk elemen card dan modal di dark mode */
+.card, .modal-content {
+  background-color: #fff;
+  color: #333;
+}
+
+body.dark-mode .card, 
+body.dark-mode .modal-content {
+  background-color: #333;
+  color: #f5f5f5;
+}
